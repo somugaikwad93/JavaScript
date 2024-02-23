@@ -20,3 +20,18 @@ let Amt = items.reduce((totalPrice, num) =>
 , 0)
 
 console.log(Amt)
+
+//Example 2: Find the max element from an array
+let arr = [56, 12, 6, 8, 45, 67, 62, 81]
+
+function maxArr(max, num){
+    if(num > max){
+        return num
+    }
+    else{
+        return max
+    }
+}
+
+let maxEle = arr.reduce(maxArr, arr[0])
+console.log(maxEle)
